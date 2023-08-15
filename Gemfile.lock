@@ -76,8 +76,11 @@ GEM
       irb (>= 1.5.0)
       reline (>= 0.3.1)
     erubi (1.12.0)
+    faker (3.2.1)
+      i18n (>= 1.8.11, < 2)
     globalid (1.1.0)
       activesupport (>= 5.0)
+    graphql (2.0.26)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     io-console (0.6.0)
@@ -96,6 +99,7 @@ GEM
     mini_mime (1.1.5)
     minitest (5.19.0)
     msgpack (1.7.2)
+    mysql2 (0.5.5)
     net-imap (0.3.7)
       date
       net-protocol
@@ -145,7 +149,6 @@ GEM
     rake (13.0.6)
     reline (0.3.7)
       io-console (~> 0.5)
-    sqlite3 (1.6.3-x86_64-linux)
     thor (1.2.2)
     timeout (0.4.0)
     tzinfo (2.0.6)
@@ -161,9 +164,11 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   debug
+  faker (~> 3.2, >= 3.2.1)
+  graphql (~> 2.0)
+  mysql2 (~> 0.5.3)
   puma (~> 5.0)
   rails (~> 7.0.7)
-  sqlite3 (~> 1.4)
   tzinfo-data
 
 RUBY VERSION
